@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        header,
+        main,
+        footer {
+            padding: 20px;
+        }
+
+        #Name {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        #Name-text {
+            max-width: 50%;
+        }
+
+        #Name h1 {
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        #Name h2 {
+            font-size: 35px;
+            margin: 10px 0;
+        }
+
+        #Name p {
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        #Name img {
+            width: 600px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #About {
+            margin-top: 100px;
+            background-color: rgb(48, 45, 45);
+        }
+
+        #About h1 {
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+
+        #About p {
+            font-size: 25px;
+            line-height: 1.5;
+            max-width: 800px;
+        }
+
+        #Skills {
+            margin-top: 100px;
+            background-color: rgb(38, 36, 36);
+        }
+
+        #Skills h1 {
+            font-size: 50px;
+            margin-bottom: 50px;
+            margin-left: 1260px;
+        }
+
+        #Skills ul {
+            margin-bottom: 50px;
+            margin-left: 1260px;
+            font-size: 20px;
+        }
+
+        #projects {
+            padding: 40px;
+            background-color: black;
+        }
+
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: #242323;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: rgb(119, 116, 116);
+        }
+
+        .project-card p {
+            color: #555353;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        
+        #Contact h1{
+            color: white;
+            font-size: 50px;
+        }
+        #github img{
+            background-color: white;
+            margin :20px;
+            border-radius: 10px;
+            height: 60px;
+
+        }
+        #linkedin img{
+            background-color: white;
+            margin :20px;
+            border-radius: 10px;
+            margin-right: 10px;
+            height: 60px;
+        }
+        #instagram img{
+            background-color: white;
+            margin :20px;
+            border-radius: 10px;
+            margin-right: 10px;
+            height: 60px;
+        }
+        form{
+            margin: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section id="Name">
+            <div id="Name-text">
+                <h1>Hi, I'm Aayush</h1>
+                <h2>Web developer enthusiast</h2>
+                <p>I'm an Indian web developer who loves to explore more technology and build innovative designer
+                    websites.</p>
+            </div>
+            <img src="photo.jpeg" alt="Aayush's image">
+        </section>
+    </header>
+
+    <main>
+        <section id="About">
+            <h1>About Me</h1>
+            <p>Hello! I'm passionate about web development and constantly learning new technologies. My goal is to
+                create beautifully designed, highly functional websites that leave a lasting impression. I'm
+                particularly interested in Frontend development and UI/UX design!</p>
+        </section>
+    </main>
+
+    <main>
+        <div>
+            <section id="Skills">
+                <h1>
+                    Skills
+                </h1>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <main>
+        <div>
+            <section id="projects">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Weather report</h3>
+                        <p>Developed a Python-based Weather Analysis Report application using the OpenWeatherMap API. The program fetches real-time weather data and generates structured reports, providing insights such as temperature, humidity, and weather conditions for any specified location.  </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>TO DO LIST</h3>
+                        <p>Created a Python-based To-Do List application to help users organize and manage daily tasks more efficiently, enhancing productivity and task tracking.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Cryptocurreny tracker</h3>
+                        <p>Developed a Python-based Cryptocurrency Tracker using the CoinMarketCap API to retrieve real-time prices and market capitalization data for individual cryptocurrencies, enabling users to monitor market trends effectively. </p>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <main>
+        <div>
+            <section id="Contact">
+                <h1>Contact Me</h1>
+                <a id="github" href="https://github.com/AK24-EM" target="_self">
+                    <img src="github.png" alt="github" >
+                </a>
+                <a id="linkedin" href="https://www.linkedin.com/in/aayush-kamble-554a25308">
+                    <img src="linkedin.png" alt="linkedin">
+                </a>
+                <a id="instagram" href="https://www.instagram.com/aayushkamble38/">
+                    <img src="instagram.png" alt="insta">
+                </a>
+            </section>
+            <form action="Name">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" placeholder="Enter your name" required>
+            </form>
+    
+            <form action="Email">
+                <label for="Email">Email</label>
+                <input type="Email" id="Email" placeholder="Enter your Email Id" required>
+            </form>
+
+            <form action="Message">
+                <label for="Message">Message box</label>
+                <textarea name="text" id="text" rows="3" cols="40" placeholder="enter your message here" ></textarea>
+            </form>
+            <form action="Submit">
+                <label for="Submit"></label>
+                <button>submit</button>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>
